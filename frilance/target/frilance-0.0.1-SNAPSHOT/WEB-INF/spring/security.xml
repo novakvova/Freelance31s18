@@ -9,10 +9,10 @@
    			         http://www.springframework.org/schema/security/spring-security-4.0.xsd">
    			         
     <http auto-config="true">
-        <intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/myadmin**" access="hasRole('ROLE_ADMIN')" />
         
         <!-- user-defined login form redirection -->
-        <form-login login-page="/login" default-target-url="/admin" authentication-failure-url="/login?error" />
+        <form-login login-page="/login" default-target-url="/myadmin" authentication-failure-url="/login?error" />
         
         <!-- logout url -->
         <logout logout-success-url="/" />
