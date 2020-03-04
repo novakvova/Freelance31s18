@@ -1,2 +1,9 @@
+frilance\abstracts\IRegistrationService.class
+frilance\dto\UserDTO.class
 frilance\controllers\nikita\MyAdminComtroller.class
+frilance\sevices\RegistrationService.class
+frilance\entities\Role.class
 frilance\controllers\AdminCtrl.class
+frilance\validation\EmailExistsException.class
+frilance\controllers\nikita\RegisterController.class
+frilance\entities\User.class
