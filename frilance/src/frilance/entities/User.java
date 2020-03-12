@@ -24,7 +24,7 @@ public class User implements Serializable {
     private int id;
     
     @Column(name = "email", length = 50, nullable = false)
-    private String username;
+    private String email;
        
     @Column(name = "password", length = 50, nullable = false)
     private String password;
@@ -38,7 +38,7 @@ public class User implements Serializable {
     
     @Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", roles=" + roles + "]";
+		return "User [id=" + id + ", username=" + email + ", password=" + password + ", roles=" + roles + "]";
 	}
 
 	public User() {
@@ -48,7 +48,7 @@ public class User implements Serializable {
 
 	public User(String username, String password, String role) {
 		super();
-		this.username = username;
+		this.email = username;
 		this.password = password;
 		this.roles=new HashSet<Role>();
 //		this.role = role;
@@ -63,11 +63,11 @@ public class User implements Serializable {
 	}
 
 	public String getUsername() {
-		return username;
+		return email;
 	}
 
 	public void setUsername(String username) {
-		this.username = username;
+		this.email = username;
 	}
 
 	public String getPassword() {
@@ -91,7 +91,7 @@ public class User implements Serializable {
 	}
 	
 	public boolean match(String name, String password) {
-        return this.username.equals(name) && this.password.equals(password);
+        return this.email.equals(name) && this.password.equals(password);
 	}
 	
     

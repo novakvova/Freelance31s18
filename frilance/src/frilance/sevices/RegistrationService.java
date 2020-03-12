@@ -1,18 +1,12 @@
 package frilance.sevices;
 
-import java.util.Arrays;
-import java.util.HashSet;
+
 import java.util.List;
 
 import javax.persistence.Query;
-import javax.transaction.Transactional;
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import frilance.abstracts.IRegistrationService;
 import frilance.dto.UserDTO;
 import frilance.entities.Role;
@@ -20,7 +14,7 @@ import frilance.entities.User;
 import frilance.validation.EmailExistsException;
 
 //@Service("registrationService")
-@Service
+//@Service
 public class RegistrationService implements IRegistrationService {
 	private Session session;
 	//private SessionFactory sessionFactory;
@@ -37,7 +31,7 @@ public class RegistrationService implements IRegistrationService {
 //		this.session = sessionFactory.openSession();
 //	}
 
-	@Transactional
+	//@Transactional
 	@Override
 	public User registerNewUserAccount(UserDTO accountDto) throws EmailExistsException {
 

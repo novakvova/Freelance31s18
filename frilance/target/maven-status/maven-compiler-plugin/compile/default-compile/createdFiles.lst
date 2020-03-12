@@ -5,5 +5,5 @@ frilance\sevices\RegistrationService.class
 frilance\entities\Role.class
 frilance\controllers\AdminCtrl.class
 frilance\validation\EmailExistsException.class
-frilance\controllers\nikita\RegisterController.class
 frilance\entities\User.class
+frilance\controllers\nikita\RegisterCtrl.class

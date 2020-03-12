@@ -56,7 +56,7 @@
 
 
 	<bean id="registrationService"
-		class="frilance.services.RegistrationService">
+		class="frilance.sevices.RegistrationService">
 		<!-- <property name="hibernateTemplate" ref="hibernateTemplateBean" /> -->
 <!-- 		<property name="sessionFactory" ref="sessionFactoryBean" /> -->
 		<constructor-arg name="sessionFactory" ref="sessionFactoryBean"/>
